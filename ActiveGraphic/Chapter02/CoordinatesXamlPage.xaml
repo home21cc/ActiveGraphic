@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActiveGraphic.Chapter02.CoordinatesXamlPage">
+    <Grid Padding ="1" RowSpacing ="1" ColumnSpacing="1" HorizontalOptions="Center" VerticalOptions="Center" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="brdMathLabel" Stroke="Black" StrokeThickness="1" StrokeShape="Rectangle" Grid.Row="0" Grid.Column="0" Padding="1">
+            <Label Text="Math coordinate" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>
+        <Border x:Name="brdMauiLabel" Stroke="Black"  StrokeThickness="1" StrokeShape="Rectangle" Grid.Row="0" Grid.Column="1" Padding="1">
+            <Label Text="Maui coordinate" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>
+        <Border x:Name="brdMathLine" Stroke="Black"  StrokeThickness="1" StrokeShape="Rectangle" Grid.Row="1" Grid.Column="0" Padding="1">
+            <Line X1="10" Y1="190" X2="190" Y2="10" Stroke="DarkRed" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>
+        <Border x:Name="brdMauiLine" Stroke="Black"  StrokeThickness="1" StrokeShape="Rectangle" Grid.Row="1" Grid.Column="1" Padding="1">
+            <Line X1="10" Y1="10" X2="190" Y2="190" Stroke="DarkBlue" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>
+    </Grid>
+</ContentPage>
