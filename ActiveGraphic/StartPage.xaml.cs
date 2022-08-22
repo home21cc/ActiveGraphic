@@ -3,9 +3,9 @@
 // File Description: 응용프로그램 시작
 // Program Type: C# MAUI
 // Creator: home21cc@gmail.com
-// Version: 0.0.0.1
+// Version: 0.0.0.2
 // Create Date: 2022/08/09
-// Final Update Date: 2022/08/09
+// Final Update Date: 2022/08/23
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 using ActiveGraphic.Models;
@@ -19,12 +19,11 @@ namespace ActiveGraphic
         readonly List<MenuModel> lstMenus = new()
         {
             new MenuModel(0, "Chapter 01 Overview of Maui programming", "", "", ""),
-            new MenuModel(1, "Chapter 01 Overview of Maui programming", "First program", "3.1", "MainPage"),
-            new MenuModel(2, "Chapter 01 Overview of Maui programming", "Xaml file based program", "3.2", "XamlFilePage"),
-            new MenuModel(3, "Chapter 01 Overview of Maui programming", "Code file based program", "3.3", "CodeFilePage"),
-            new MenuModel(4, "Chapter 02 Maui graphic programming", "", "", ""),
-            new MenuModel(5, "Chapter 02 Maui graphic programming", "Default coordinates in Maui", "1.1", "Chapter02.CoordinatesXamlPage"),
-            new MenuModel(6, "Chapter 02 Maui graphic programming", "Custom coordinates in Maui", "1.2", "Chapter02.CustomCoordinatesXamlPage"),
+            new MenuModel(1, "Chapter 01 Overview of Maui programming", "First program", "2", "Chapter01.FirstPage"),
+            new MenuModel(2, "Chapter 01 Overview of Maui programming", "Code file based program", "3.6", "CodebasePage"),
+            new MenuModel(3, "Chapter 02 Maui graphic programming", "", "", ""),
+            new MenuModel(4, "Chapter 02 Maui graphic programming", "Default coordinates in Maui", "1.1", "Chapter02.CoordinatesXamlPage"),
+            new MenuModel(5, "Chapter 02 Maui graphic programming", "Custom coordinates in Maui", "1.2", "Chapter02.CustomCoordinatesXamlPage"),
         };
 
 

@@ -49,10 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Chapter01\" />
-	</ItemGroup>
-
-	<ItemGroup>
+	  <Compile Update="Chapter01\MainPage.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Chapter02\CoordinatesPage.xaml.cs">
 	    <DependentUpon>CoordinatesPage.xaml</DependentUpon>
 	  </Compile>
