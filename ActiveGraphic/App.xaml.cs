@@ -3,9 +3,9 @@
 // File Description: Application Global Attribute
 // Program Type: C# MAUI
 // Creator: home21cc@gmail.com
-// Version: 0.0.0.2
+// Version: 0.0.0.3
 // Create Date: 2022/08/09
-// Final Update Date: 2022/08/22
+// Final Update Date: 2022/08/24
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 using Microsoft.Maui.Controls.Shapes;
@@ -35,6 +35,16 @@ namespace ActiveGraphic
             }
         };
 
+        readonly Style styleButton = new(typeof(Button))
+        {
+            Setters =
+            {
+                new Setter() { Property = Button.HorizontalOptionsProperty, Value = LayoutOptions.Fill },
+                new Setter() { Property = Button.VerticalOptionsProperty, Value = LayoutOptions.Fill },
+                new Setter() { Property = Button.PaddingProperty, Value = new Thickness(1, 1, 1, 1) },
+            }
+        };
+
         readonly Style styleGrid = new(typeof(Grid))
         {
             Setters =
@@ -44,6 +54,14 @@ namespace ActiveGraphic
                 new Setter() { Property = Grid.PaddingProperty, Value = 1},
                 new Setter() { Property = Grid.ColumnSpacingProperty, Value = 1},
                 new Setter() { Property = Grid.RowSpacingProperty, Value = 1},
+            }
+        };
+
+        readonly Style styleHorizontalStackLayout = new(typeof(HorizontalStackLayout))
+        {
+            Setters =
+            {
+
             }
         };
 
@@ -62,6 +80,7 @@ namespace ActiveGraphic
             {
                 new Setter() { Property = Line.HorizontalOptionsProperty, Value = LayoutOptions.Center},
                 new Setter() { Property = Line.VerticalOptionsProperty, Value = LayoutOptions.Center },
+                new Setter() { Property = Rectangle.StrokeProperty, Value = Colors.Blue }
             }
         };
 
@@ -75,7 +94,7 @@ namespace ActiveGraphic
             }
         };
 
-        readonly Style stylePage = new(typeof(NavigationPage))
+        readonly Style styleNavigation = new(typeof(NavigationPage))
         {
             Setters =
             {
@@ -83,6 +102,37 @@ namespace ActiveGraphic
             }
         };
 
+        readonly Style stylePicker = new(typeof(Picker))
+        {
+            Setters =
+            {
+
+            }
+        };
+
+        readonly Style styleRectangle = new(typeof(Rectangle))
+        {
+            Setters =
+            {
+                new Setter() { Property = Rectangle.StrokeProperty, Value = Colors.Blue }
+            }
+        };
+
+        readonly Style styleSlider = new(typeof(Slider))
+        {
+            Setters =
+            {
+
+            }
+        };
+
+        readonly Style styleVerticalStackLayout = new(typeof(VerticalStackLayout))
+        {
+            Setters =
+            {
+
+            }
+        };
 
         public App()
         {
@@ -94,11 +144,17 @@ namespace ActiveGraphic
             {
                 {"StyleBorder", styleBorder },
                 {"StyleBorderCell", styleBorderCell },
+                {"StyleButton", styleButton },
                 {"StyleGrid", styleGrid },
+                {"StyleHorizontalStackLayout", styleHorizontalStackLayout },
                 {"StyleLabel", styleLabel },
                 {"StyleLine", styleLine },
                 {"StyleListView", styleListView },
-                {"StylePage", stylePage }
+                {"StyleNavigation", styleNavigation },
+                {"StylePicker", stylePicker },
+                {"StyleRectangle", styleRectangle },
+                {"StyleSlider", styleSlider },
+                {"StyleVerticalStackLayout", styleVerticalStackLayout },
             };
         }
     }

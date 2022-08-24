@@ -19,11 +19,15 @@ namespace ActiveGraphic
         readonly List<MenuModel> lstMenus = new()
         {
             new MenuModel(0, "Chapter 01 Overview of Maui programming", "", "", ""),
-            new MenuModel(1, "Chapter 01 Overview of Maui programming", "First program", "2", "Chapter01.FirstPage"),
-            new MenuModel(2, "Chapter 01 Overview of Maui programming", "Code file based program", "3.6", "CodebasePage"),
+            new MenuModel(1, "Chapter 01 Overview of Maui programming", "First program", "2", "Chapter01.MainPage"),
+            new MenuModel(2, "Chapter 01 Overview of Maui programming", "Code file based program", "3.6", "Chapter01.CodebasePage"),
             new MenuModel(3, "Chapter 02 Maui graphic programming", "", "", ""),
-            new MenuModel(4, "Chapter 02 Maui graphic programming", "Default coordinates in Maui", "1.1", "Chapter02.CoordinatesXamlPage"),
-            new MenuModel(5, "Chapter 02 Maui graphic programming", "Custom coordinates in Maui", "1.2", "Chapter02.CustomCoordinatesXamlPage"),
+            new MenuModel(4, "Chapter 02 Maui graphic programming", "Default coordinates in Maui", "1.1", "Chapter02.CoordinatesPage"),
+            new MenuModel(5, "Chapter 02 Maui graphic programming", "Default coordinates in Maui", "1.1", "Chapter02.CoordinatesXamlPage"),
+            new MenuModel(6, "Chapter 02 Maui graphic programming", "Custom coordinates in Maui", "1.2", "Chapter02.CustomCoordinatesPage"),
+            new MenuModel(7, "Chapter 02 Maui graphic programming", "Custom coordinates in Maui", "1.2", "Chapter02.CustomCoordinatesXamlPage"),
+            new MenuModel(8, "Chapter 02 Maui graphic programming", "Custom scale in Maui", "1.3", "Chapter02.CustomScalePage"),
+            new MenuModel(9, "Chapter 02 Maui graphic programming", "Custom scale in Maui", "1.3", "Chapter02.CustomScaleXamlPage"),
         };
 
 
